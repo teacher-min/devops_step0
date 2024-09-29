@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class HelloController {
 
-  @Value("${{secrets.SERVER_SSH_KEY}}")
+  @Value("${secrets.SERVER_SSH_KEY}")
   private String key;
 
   @GetMapping("/")
